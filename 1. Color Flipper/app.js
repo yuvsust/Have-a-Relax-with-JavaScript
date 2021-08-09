@@ -11,5 +11,5 @@ btn.addEventListener('click', function () {
         hex_color += hex_digit[idx];
     }
     color.innerText = hex_color;
-    document.getElementsByTagName('main')[0].style.backgroundColor = hex_color;
+    document.getElementsByTagName('body')[0].style.backgroundColor = hex_color;
 })
