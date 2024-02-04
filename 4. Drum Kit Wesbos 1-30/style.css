@@ -1,86 +1,91 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-image: url(background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .text {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+#volume-slider {
+  display: flex;
+  align-items: center;
 }
 
 .container {
-    height: 80vh;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    align-items: center;
+  height: 80vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .heading {
-    font-size: 60px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    color: antiquewhite;
+  font-size: 60px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  color: antiquewhite;
 }
 
 .name {
-    color: wheat;
-    font-size: 20px;
-    font-weight: bold;
+  color: wheat;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .keys {
-    width: 125vh;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: flex-end;
+  width: 125vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-end;
 }
 
 .key {
-    border-style: solid;
-    border-color: teal;
-    border-radius: 4px;
-    height: 8vh;
-    width: 12vh;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: all 0.07s;
+  border-style: solid;
+  border-color: teal;
+  border-radius: 4px;
+  height: 8vh;
+  width: 12vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.07s;
 }
 
 kbd {
-    font-size: 30px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    color: antiquewhite;
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  color: antiquewhite;
 }
 
-.key>span {
-    color: gold;
-    font-weight: bold;
-    font-family: cursive;
-    text-transform: uppercase;
+.key > span {
+  color: gold;
+  font-weight: bold;
+  font-family: cursive;
+  text-transform: uppercase;
 }
 
 .playing {
-    border-color: #ffc600;
-    box-shadow: 0 0 10px #ffc600;
-    transform: scale(1.15);
+  border-color: #ffc600;
+  box-shadow: 0 0 10px #ffc600;
+  transform: scale(1.15);
 }
 
 .key:active {
-    border-color: #ffc600;
-    box-shadow: 0 0 10px #ffc600;
-    transform: scale(1.15);
+  border-color: #ffc600;
+  box-shadow: 0 0 10px #ffc600;
+  transform: scale(1.15);
 }
